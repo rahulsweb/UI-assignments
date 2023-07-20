@@ -1,0 +1,20 @@
+$white:#fff;
+$font-12:.9rem;
+$font-10:.8rem;
+$font-1:.7rem;
+$color:gray;
+
+.header{
+    font-weight: $font-10;
+        background-color: $white !important;
+    
+}
+
+
+.font-size-10{
+    font-size:$font-12;
+}
+
+.font-size-6{
+    font-size:$font-1;
+}
