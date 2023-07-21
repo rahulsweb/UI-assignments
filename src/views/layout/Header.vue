@@ -130,7 +130,7 @@
 
 <script>
 export default {
-  name: "Headers",
+  name: "Header",
 };
 </script>
 
