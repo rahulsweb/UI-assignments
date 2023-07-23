@@ -1,5 +1,7 @@
 $white:#fff;
 $font-12:.9rem;
+$font-5:.5rem;
+$font-4:.6rem;
 $font-10:.8rem;
 $font-1:.7rem;
 $color:gray;
@@ -13,6 +15,15 @@ $color:gray;
 
 .font-size-10{
     font-size:$font-12;
+}
+.font-size-5{
+    font-size:$font-10;
+}
+.font-size-4{
+    font-size:$font-10;
+}
+.font-size-4{
+    font-size:$font-4;
 }
 
 .font-size-6{

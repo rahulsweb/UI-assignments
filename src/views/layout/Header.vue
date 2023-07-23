@@ -1,7 +1,7 @@
 
 <template>
   <div class="header">
-    <nav class="container mx-auto  px-10">
+    <nav class="container mx-auto">
       <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div class="relative pt-2 h-12 items-center justify-between">
             <div class="grid grid-cols-3 gap-3 text-center">
