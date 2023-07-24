@@ -2,10 +2,10 @@
   <div>
     <div class="w-full">
       <!-- component -->
-      <section class="container px-4 mx-auto">
+      <section class="container mx-auto">
         <div class="flex flex-col">
-          <div class="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-            <div class="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
+          <div class="-mx-4 -my-2 overflow-x-auto">
+            <div class="inline-block min-w-full py-2 align-middle">
               <div
                 class="overflow-hidden border border-gray-200 dark:border-gray-700 md:rounded-lg"
               >
@@ -36,7 +36,7 @@
                       >
                         <p class="font-size-6">0 replies</p>
                         <p class="font-size-6 text-gray-600 dark:text-gray-400">
-                          kate@example.com
+                          10.3k views
                         </p>
                       </td>
                       <td
@@ -53,7 +53,7 @@
                               Arthur Melo
                             </h2>
                             <p class="font-size-6 text-gray-600 dark:text-gray-400">
-                              authurmelo@example.com
+                              July 27 ,2023
                             </p>
                           </div>
                         </div>
@@ -62,7 +62,7 @@
                       <td class="px-4 py-4 whitespace-nowrap">
                         <div class="flex items-center gap-x-6">
                           <i class="fas fa-heart"></i>
-                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star text-blue-500"></i>
                           <i class="fas fa-check"></i>
                         </div>
                       </td>
@@ -91,7 +91,7 @@
                       >
                         <p class="font-size-6">0 replies</p>
                         <p class="font-size-6 text-gray-600 dark:text-gray-400">
-                          kate@example.com
+                          10.3k views
                         </p>
                       </td>
                       <td
@@ -108,7 +108,7 @@
                               Andi Lane
                             </h2>
                             <p class="font-size-6 text-gray-600 dark:text-gray-400">
-                              andi@example.com
+                              July 27 ,2023
                             </p>
                           </div>
                         </div>
@@ -146,7 +146,7 @@
                       >
                         <p class="font-size-6">0 replies</p>
                         <p class="font-size-6 text-gray-600 dark:text-gray-400">
-                          kate@example.com
+                          10.3k views
                         </p>
                       </td>
                       <td
@@ -163,7 +163,7 @@
                               Kate Morrison
                             </h2>
                             <p class="font-size-6 text-gray-600 dark:text-gray-400">
-                              kate@example.com
+                              July 27 ,2023
                             </p>
                           </div>
                         </div>
@@ -201,7 +201,7 @@
                       >
                         <p class="font-size-6">0 replies</p>
                         <p class="font-size-6 text-gray-600 dark:text-gray-400">
-                          kate@example.com
+                          10.3k views
                         </p>
                       </td>
                       <td
@@ -218,7 +218,7 @@
                               Candice Wu
                             </h2>
                             <p class="font-size-6 text-gray-600 dark:text-gray-400">
-                              candice@example.com
+                              July 27 ,2023
                             </p>
                           </div>
                         </div>
@@ -256,7 +256,7 @@
                       >
                         <p class="font-size-6">0 replies</p>
                         <p class="font-size-6 text-gray-600 dark:text-gray-400">
-                          kate@example.com
+                          10.3k views
                         </p>
                       </td>
                       <td
@@ -273,7 +273,7 @@
                               Orlando Diggs
                             </h2>
                             <p class="font-size-6 text-gray-600 dark:text-gray-400">
-                              orlando@example.com
+                              July 27 ,2023
                             </p>
                           </div>
                         </div>
