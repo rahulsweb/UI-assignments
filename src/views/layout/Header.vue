@@ -11,9 +11,10 @@
                 <div class="flex flex-shrink-0 items-center">
                   <img
                     class="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                    src="https://img.freepik.com/premium-vector/chat-vector-icon_676179-133.jpg"
                     alt="Your Company"
                   />
+                  <span class="text-gray-500 bolder"> Forumx</span>
                 </div>
                 <div class="hidden sm:ml-6 sm:block">
                   <div class="flex space-x-4">

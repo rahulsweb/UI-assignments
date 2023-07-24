@@ -9,11 +9,13 @@
               <div
                 class="overflow-hidden border border-gray-200 dark:border-gray-700 md:rounded-lg"
               >
-                <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
+                <table
+                  class="min-w-full divide-y divide-gray-200 dark:divide-gray-700 border-separate border-spacing-y-3"
+                >
                   <tbody
                     class="bg-white divide-y divide-gray-200 dark:divide-gray-700 dark:bg-gray-900"
                   >
-                    <tr>
+                    <tr class="">
                       <td
                         colspan="2"
                         class="px-4 py-4 text-gray-500 dark:text-gray-300 whitespace-nowrap"
@@ -68,7 +70,7 @@
                       </td>
                     </tr>
 
-                    <tr>
+                    <tr class="">
                       <td
                         colspan="2"
                         class="px-4 py-4 text-gray-500 dark:text-gray-300 whitespace-nowrap"
@@ -123,7 +125,7 @@
                       </td>
                     </tr>
 
-                    <tr>
+                    <tr class="">
                       <td
                         colspan="2"
                         class="px-4 py-4 text-gray-500 dark:text-gray-300 whitespace-nowrap"
@@ -178,7 +180,7 @@
                       </td>
                     </tr>
 
-                    <tr>
+                    <tr class="">
                       <td
                         colspan="2"
                         class="px-4 py-4 text-gray-500 dark:text-gray-300 whitespace-nowrap"
@@ -233,7 +235,7 @@
                       </td>
                     </tr>
 
-                    <tr>
+                    <tr class="">
                       <td
                         colspan="2"
                         class="px-4 py-4 text-gray-500 dark:text-gray-300 whitespace-nowrap"
