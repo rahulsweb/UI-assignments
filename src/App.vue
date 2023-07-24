@@ -24,6 +24,10 @@ export default {
 <style lang="scss">
 @import "@/assets/css/users.scss";
 
+.ck-content {
+  height: 200px;
+  resize: vertical !important;
+}
 body {
   background-color: #e5e7eb !important;
 }

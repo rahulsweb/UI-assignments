@@ -33,7 +33,7 @@ Vue.use(VueRouter);
 // Optionally install the BootstrapVue icon components plugin
 
 import router from './router';
-
+import store from './store';
 import './assets/tailwind.css'
 // Vue.use(VueRouter);
 Vue.config.productionTip = false
@@ -41,5 +41,6 @@ import CKEditor from "@ckeditor/ckeditor5-vue2";
 Vue.use(CKEditor);
 new Vue({
   render: h => h(App),
+  store,
   router
 }).$mount('#app')
