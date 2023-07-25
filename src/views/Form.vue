@@ -1,5 +1,22 @@
 <template>
   <div>
+    <b-alert
+      :show="dismissCountDown"
+      class="position-fixed fixed-top m-0 rounded-0 text-center"
+      style="z-index: 2000"
+      variant="success"
+      @dismissed="dismissCountDown = 0"
+      @dismiss-count-down="countDownChanged"
+      dismissible
+    >
+      Post has been added Successfully! {{ dismissCountDown }}
+      <b-progress
+        variant="danger"
+        :max="dismissSecs"
+        :value="dismissCountDown"
+        height="4px"
+      ></b-progress>
+    </b-alert>
     <div class="col-md-8 offset-2 mt-10 mb-2">
       <h4 class="text-2xl text-bold dark:text-white">New Post</h4>
 
@@ -10,14 +27,26 @@
           Your content will need to be approved by a moderator</strong
         >
       </div>
-      <div class="mt-2 bg-white p-3 font-size-4 flex">
+      <div
+        class="p-2 mt-3 text-sm text-gray-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-gray-400"
+        role="alert"
+      >
+        <span class="font-size-4 text-bold"
+          ><i class="fa fa-magic"></i> Forum forum is a peer-to-peer community for anyone
+          building their website and online business</span
+        >
+        <span class="float-right font-size-4 text-bold">GOT IT</span>
+      </div>
+      <div class="mt-3 bg-white p-3 font-size-4 flex">
         <div class="col-9 p-2">
           <div class="mb-4">
             <label class="block text-gray-700 mb-2 font-size-4" for="Title">
               Title <span class="text-red-700 ml-2">REQUIRED</span>
             </label>
+
             <input
-              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              :class="title ? 'border-red-400' : 'border-green-400'"
+              class="border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               id="Title"
               type="text"
               placeholder="Write a descriptive title for your post"
@@ -30,7 +59,8 @@
               <span class="text-red-700 ml-2">REQUIRED</span>
             </label>
             <input
-              class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+              :class="tags ? 'border-red-400' : 'border-green-400'"
+              class="border border-red-500 rounded w-full py-2 px-3 mb-3 leading-tight focus:outline-none focus:shadow-outline"
               id="Tags"
               type="Tags"
               placeholder="+ Add tags to make your post discoverable"
@@ -42,6 +72,7 @@
               >Title <span class="text-red-700 ml-2">REQUIRED</span></label
             >
             <ckeditor
+              :class="!editor ? 'border-red-400' : 'border-green-400'"
               :editor="editor"
               v-model="editorData"
               :config="editorConfig"
@@ -106,6 +137,12 @@ export default {
   computed: {},
   data() {
     return {
+      dismissSecs: 2,
+      dismissCountDown: 0,
+      showDismissibleAlert: true,
+      showTop: false,
+      title: "",
+      tags: "",
       editor: ClassicEditor,
       editorData: "<p>Content of the editor.</p>",
       editorConfig: {
@@ -132,19 +169,31 @@ export default {
         },
         // extraPlugins: [this.uploader],
         language: "nl",
+
         // extraPlugins: ["uploadimage"],
       },
     };
   },
   methods: {
+    countDownChanged(dismissCountDown) {
+      this.dismissCountDown = dismissCountDown;
+    },
+    showAlert() {
+      this.dismissCountDown = this.dismissSecs;
+    },
     submitData() {
+      let date = new Date();
       let data = {
         title: this.title,
         tag: this.tags,
         editor: this.editorData,
+        date: date,
       };
       console.log(data);
       this.$store.dispatch("AddPost", data);
+      this.showAlert();
+      this.showTop = true;
+      this.$router.push({ path: "/" });
     },
     // uploader(editor) {
     //   editor.plugins.get("FileRepository").createUploadAdapter = (loader) => {

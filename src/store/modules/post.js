@@ -3,12 +3,12 @@ import Cookies from 'js-cookie'
 let obj=Cookies.get('post');
 const posts = {
   state: {
-    post: obj ? JSON.parse(obj):{},
+    post: obj ? JSON.parse(obj):[],
   },
   mutations: {
 
     SET_POST: (state, post) => {
-      state.post = post;
+      state.post.push(post);
          Cookies.set('post', JSON.stringify(state.post))
     },
   },
