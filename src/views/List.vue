@@ -2,6 +2,7 @@
   <div>
     <div class="w-full">
       <!-- component -->
+
       <section class="sm:mt-5">
         <div class="flex flex-col">
           <div class="overflow-x-auto">
@@ -99,15 +100,37 @@
 <script>
 export default {
   props: ["sort"],
+  data() {
+    return {
+      dummy: [
+        {
+          title: "Software Rngineer",
+          tag: "Raul",
+          editor: "<h2>Content of the editor.</h2>",
+          date: "2023-07-26T15:17:24.235Z",
+          id: 1690384644235,
+          topic: true,
+        },
+        {
+          title: "News ",
+          tag: "private",
+          editor: "<p>Indian news</p>",
+          date: "2023-07-26T16:05:06.992Z",
+          id: 1690387506992,
+          topic: false,
+        },
+      ],
+    };
+  },
   mounted() {},
   computed: {
     posts() {
-      let temp = this.$store.getters.post;
+      let temp = this.$store.getters.post || this.dummy;
       if (this.sort != null) {
         return temp.filter((el, index) => {
           return el.topic == this.sort;
         });
-      } else return this.$store.getters.post;
+      } else return temp;
     },
   },
   watch: {

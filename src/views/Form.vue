@@ -30,7 +30,7 @@
 
               <input
                 :class="errors.first('title') ? 'border-red-400' : ''"
-                class="border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                class="border rounded w-full py-2 px-3 mb-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 id="Title"
                 name="title"
                 type="text"
@@ -42,7 +42,7 @@
                 Please fill out this Title field.
               </p>
             </div>
-            <div class="mb-2">
+            <div class="">
               <label class="block mb-2 font-size-4" for="Tags">
                 Tags
                 <span class="text-red-700 ml-2">REQUIRED</span>
@@ -50,7 +50,7 @@
               <input
                 v-validate="'required'"
                 :class="tags ? 'border-red-400' : 'border-green-400'"
-                class="border border-red-500 rounded w-full py-2 px-3 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                class="border border-red-500 rounded w-full py-2 px-3 mb-1 leading-tight focus:outline-none focus:shadow-outline"
                 id="Tags"
                 type="Tags"
                 name="tags"
@@ -72,6 +72,7 @@
                 :editor="editor"
                 v-model="editorData"
                 :config="editorConfig"
+                placeholder="Enter the content"
                 :height="120"
                 :rows="6"
               ></ckeditor>
@@ -126,6 +127,7 @@
 </template>
 
 <script>
+// import { Validator } from "vee-validate";
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 
 export default {
@@ -143,7 +145,7 @@ export default {
       title: "",
       tags: "",
       editor: ClassicEditor,
-      editorData: "<p>Content of the editor.</p>",
+      editorData: "",
       editorConfig: {
         toolbar: [
           "heading",
@@ -195,6 +197,11 @@ export default {
       this.dismissCountDown = this.dismissSecs;
     },
     submitData() {
+      this.$validator.validateAll().then((res) => {
+        if (res) this.submit();
+      });
+    },
+    submit() {
       let date = new Date();
       let action = "AddPost";
       let data = {
