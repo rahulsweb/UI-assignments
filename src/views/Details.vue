@@ -275,7 +275,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-9 col-lg-9 m-3">
+        <div class="col-sm-12 col-md-3 col-lg-3 m-3">
           <Dropdown> </Dropdown>
         </div>
       </div>
