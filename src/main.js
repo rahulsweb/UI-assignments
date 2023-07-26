@@ -10,7 +10,9 @@ import App from './App.vue'
 // Vue.use(BootstrapVue)
 
 import VueTailwind from 'vue-tailwind'
+import VeeValidate from 'vee-validate';
 
+Vue.use(VeeValidate);
 
 Vue.use(VueTailwind)
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'

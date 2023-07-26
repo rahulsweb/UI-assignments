@@ -14,7 +14,12 @@ const routes = [{
         component: Form
     },
     {
-        path: '/details/:name',
+        path: '/add/:id',
+        name: 'Update',
+        component: Form
+    },
+    {
+        path: '/details/:id',
         name: 'Details',
         component: Details
     },

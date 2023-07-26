@@ -23,6 +23,7 @@
                       href="#"
                       class="text-dark rounded-md px-3 py-2 text-xs"
                       aria-current="page"
+                      @click="redirectTo"
                       >All topics</a
                     >
                     <a href="#" class="hover:text-red rounded-md px-3 py-2 text-xs"
@@ -123,6 +124,11 @@
 <script>
 export default {
   name: "Header",
+  methods: {
+    redirectTo() {
+      this.$router.push({ path: "/" }).catch((el) => el);
+    },
+  },
 };
 </script>
 

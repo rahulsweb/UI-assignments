@@ -2,7 +2,7 @@
   <div>
     <div class="">
       <div
-        class="relative top-20 block rounded-lg bg-primary text-light p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700"
+        class="relative top-4 block rounded-lg bg-primary text-light p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700"
       >
         <h5 class="mb-2 text-xl">
           Circle Day:Build

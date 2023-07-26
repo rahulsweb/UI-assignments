@@ -8,8 +8,23 @@ const posts = {
   mutations: {
 
     SET_POST: (state, post) => {
+  
       state.post.push(post);
          Cookies.set('post', JSON.stringify(state.post))
+    },
+    UPDATE_POST: (state, post) => {
+
+      let temp=state.post;
+ 
+      state.post.forEach((element,index) => {
+
+              if(post.id==element.id){
+                state.post[index]=post;
+              }
+ 
+      });
+ 
+      Cookies.set('post', JSON.stringify(state.post))
     },
   },
   actions: {
@@ -21,14 +36,14 @@ const posts = {
       commit
     }, data) {
       commit('SET_POST', data);
-      // return new Promise((resolve, reject) => {
-      //   addPost(data).then(response => {
-          
-      //     resolve(response)
-      //   }).catch(error => {
-      //     reject(error)
-      //   })
-      // })
+    },
+      /**
+   * chat count
+   */
+  UpdatePost({
+      commit
+    }, data) {
+      commit('UPDATE_POST', data);
     },
  },
 }

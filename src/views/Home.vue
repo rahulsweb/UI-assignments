@@ -29,6 +29,7 @@
                 class="w-30 font-size-4 pt-1 pb-1 mr-2 mb-2 mt-2 border-right"
                 v-model="selected1"
                 :options="options1"
+                @change="load"
               >
                 <template #first>
                   <b-form-select-option :value="null" disabled
@@ -48,11 +49,13 @@
           </div>
           <div class="w-full">
             <div>
-              <List> </List>
+              <div v-show="loadComponent">
+                <List :sort="selected1"> </List>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-3 p-2 m-2 relative top-8">
+        <div class="col-3 p-2 relative mp-10">
           <Dropdown> </Dropdown>
         </div>
       </div>
@@ -70,10 +73,15 @@ export default {
   data() {
     return {
       posts: [],
+      loadComponent: true,
       selected: null,
       options: [{ text: "Recent" }, { text: "Title" }, { text: "Start date" }],
       selected1: null,
-      options1: [{ text: "All" }, { text: "Solved topics" }, { text: "Unsolved topics" }],
+      options1: [
+        { value: null, text: "All" },
+        { value: 1, text: "Solved topics" },
+        { value: false, text: "Unsolved topics" },
+      ],
     };
   },
   mounted() {
@@ -83,15 +91,30 @@ export default {
     List,
     Dropdown,
   },
+  watch: {
+    selected1(value) {
+      this.load();
+    },
+  },
   methods: {
     addPost() {
       this.$router.push({ path: "/add" });
+    },
+    load() {
+      this.loadComponent = false;
+      setTimeout(this.newLoad, 100);
+    },
+    newLoad() {
+      this.loadComponent = true;
     },
   },
 };
 </script>
 
 <style>
+.mp-10 {
+  margin-top: 9%;
+}
 .post .btn {
   font-size: 0.3rem !important;
 }
