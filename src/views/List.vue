@@ -2,14 +2,15 @@
   <div>
     <div class="w-full">
       <!-- component -->
-      <section class="container mx-auto">
-        <div class="md:flex md:flex-col col-12">
-          <div class="-mx-4 -my-2">
-            <div class="inline-block min-w-full py-2 align-middle">
-              <div v-if="posts.length">
+      <section class="mt-5">
+        <div class="flex flex-col">
+          <div class="overflow-x-auto">
+            <div class="inline-block min-w-full">
+              <div class="overflow-hidden" v-if="posts.length">
                 <table
-                  class="min-w-full divide-y divide-gray-200 dark:divide-gray-700 border-separate border-spacing-y-3"
+                  class="min-w-full border text-center text-sm font-light dark:border-neutral-500"
                 >
+                  <thead class="border-b font-medium dark:border-neutral-500"></thead>
                   <tbody
                     class="w-100 bg-white divide-y divide-gray-200 dark:divide-gray-700 dark:bg-gray-900"
                   >
