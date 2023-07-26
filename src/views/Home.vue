@@ -57,6 +57,73 @@
         </div>
         <div class="col-sm-12 col-md-3 col-lg-3 p-2 relative mp-10">
           <Dropdown> </Dropdown>
+          <div class="mt-2 p-2">
+            <label class="font-size-10 pt-3 pb-2"> Popular Contributor </label>
+            <div class="col-12 flex mt-3">
+              <div class="col-4">
+                <img
+                  class="object-cover w-8 h-8 rounded-full"
+                  src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                  alt=""
+                />
+                <div>
+                  <span class="font-size-4"> {{ "Virat ss" }}</span>
+                </div>
+              </div>
+              <div class="col-4">
+                <img
+                  class="object-cover w-8 h-8 rounded-full"
+                  src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                  alt=""
+                />
+                <div>
+                  <span class="font-size-4"> {{ "John mar" }}</span>
+                </div>
+              </div>
+              <div class="col-4">
+                <img
+                  class="object-cover w-8 h-8 rounded-full"
+                  src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                  alt=""
+                />
+                <div>
+                  <span class="font-size-4"> {{ "Test name" }}</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 flex mt-3">
+              <div class="col-4">
+                <img
+                  class="object-cover w-8 h-8 rounded-full"
+                  src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                  alt=""
+                />
+                <div>
+                  <span class="font-size-4"> {{ "User name" }}</span>
+                </div>
+              </div>
+              <div class="col-4">
+                <img
+                  class="object-cover w-8 h-8 rounded-full"
+                  src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                  alt=""
+                />
+                <div>
+                  <span class="font-size-4"> {{ "First name" }}</span>
+                </div>
+              </div>
+              <div class="col-4">
+                <img
+                  class="object-cover w-8 h-8 rounded-full"
+                  src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                  alt=""
+                />
+                <div>
+                  <span class="font-size-4"> {{ "name " }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
