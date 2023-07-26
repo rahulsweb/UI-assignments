@@ -82,6 +82,7 @@
             </div>
             <div class="pt-2 pb-5 w-full">
               <button
+                @click="redirectTo"
                 class="bg-transparent hover:bg-blue-500 text-dark-700 font-semibold py-2 px-4 border border-gray-900 hover:border-transparent rounded"
               >
                 Close
@@ -223,11 +224,9 @@ export default {
       this.showTop = true;
       this.$router.push({ path: "/" });
     },
-    // uploader(editor) {
-    //   editor.plugins.get("FileRepository").createUploadAdapter = (loader) => {
-    //     return new UploadAdapter(loader);
-    //   };
-    // },
+    redirectTo() {
+      this.$router.push({ path: "/" }).catch((el) => el);
+    },
   },
 };
 </script>
