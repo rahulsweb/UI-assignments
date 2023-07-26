@@ -2,7 +2,7 @@
   <div>
     <div class="w-full">
       <!-- component -->
-      <section class="mt-5">
+      <section class="sm:mt-5">
         <div class="flex flex-col">
           <div class="overflow-x-auto">
             <div class="inline-block min-w-full">
