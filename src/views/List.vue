@@ -125,7 +125,8 @@ export default {
   mounted() {},
   computed: {
     posts() {
-      let temp = this.$store.getters.post || this.dummy;
+      let data = (temp = this.$store.getters.post);
+      if (data.length) temp = this.dummy;
       if (this.sort != null) {
         return temp.filter((el, index) => {
           return el.topic == this.sort;
