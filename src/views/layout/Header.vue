@@ -8,7 +8,7 @@
               <div
                 class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
               >
-                <div class="flex flex-shrink-0 items-center">
+                <div class="flex flex-shrink-0 items-center" @click="redirectTo">
                   <img
                     class="h-8 w-auto"
                     src="https://img.freepik.com/premium-vector/chat-vector-icon_676179-133.jpg"

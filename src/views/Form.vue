@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="col-md-8 offset-2 mt-10 mb-2">
+    <div class="col-md-8 offset-md-2 mt-10 mb-2">
       <h4 class="text-2xl text-bold dark:text-white">New Post</h4>
 
       <div
@@ -20,8 +20,8 @@
         >
         <span class="float-right font-size-4 text-bold">GOT IT</span>
       </div>
-      <div class="mt-3 bg-white p-3 font-size-4 flex">
-        <div class="col-9 p-2">
+      <div class="mt-3 bg-white p-3 font-size-4 md:flex">
+        <div class="col-sm-12 col-md-9 col-lg-9 p-2">
           <form class="w-full max-w-lg">
             <div class="mb-4">
               <label class="block text-gray-700 mb-2 font-size-4" for="Title">
@@ -95,7 +95,7 @@
             </div>
           </form>
         </div>
-        <div class="col-3 p-2 mt-4">
+        <div class="col-sm-12 col-md-3 col-lg-3 p-2 mt-4">
           <div
             class="text-sm text-gray-500 bg-white border border-gray-200 rounded-lg shadow-sm dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800"
           >
