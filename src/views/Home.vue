@@ -113,7 +113,7 @@ export default {
 
 <style>
 .mp-10 {
-  margin-top: 9%;
+  margin-top: 10%;
 }
 .post .btn {
   font-size: 0.3rem !important;

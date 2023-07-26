@@ -7,9 +7,7 @@
           <div class="overflow-x-auto">
             <div class="inline-block min-w-full">
               <div class="overflow-hidden" v-if="posts.length">
-                <table
-                  class="min-w-full border text-center text-sm font-light dark:border-neutral-500"
-                >
+                <table class="min-w-full border-separate border-spacing-y-3">
                   <thead class="border-b font-medium dark:border-neutral-500"></thead>
                   <tbody
                     class="w-100 bg-white divide-y divide-gray-200 dark:divide-gray-700 dark:bg-gray-900"
