@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="post container mx-auto">
-      <div class="w-full flex">
-        <div class="col-9 m-2">
+      <div class="w-full lg:flex md:flex">
+        <div class="col-sm-12 col-md-9 col-lg-9 m-2">
           <div class="mt-4">
             <label class="font-size-10"> Forumx Resourse </label>
             <br />
@@ -55,7 +55,7 @@
             </div>
           </div>
         </div>
-        <div class="col-3 p-2 relative mp-10">
+        <div class="col-sm-12 col-md-3 col-lg-3 p-2 relative mp-10">
           <Dropdown> </Dropdown>
         </div>
       </div>

@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="container mx-auto post">
-      <div class="w-full flex">
-        <div class="col-9 m-2">
+      <div class="w-full lg:flex md:flex">
+        <div class="col-sm-12 col-md-9 col-lg-9 m-2">
           <div class="mt-4">
             <div
               class="w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6"
@@ -275,7 +275,7 @@
             </div>
           </div>
         </div>
-        <div class="col-3 m-3">
+        <div class="col-sm-12 col-md-9 col-lg-9 m-3">
           <Dropdown> </Dropdown>
         </div>
       </div>

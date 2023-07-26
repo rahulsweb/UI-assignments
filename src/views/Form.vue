@@ -2,7 +2,7 @@
   <div>
     <div class="col-md-8 offset-2 mt-10 mb-2">
       <h4 class="text-2xl text-bold dark:text-white">New Post</h4>
-      {{ post }}
+
       <div
         class="block w-full p-4 mt-2 text-gray-900 border border-gray-300 rounded-lg bg-stone-300 sm:text-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
       >
