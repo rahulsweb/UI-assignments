@@ -81,7 +81,7 @@
                   </tbody>
                 </table>
               </div>
-              <div class="w-full mt-4" v-else>
+              <div class="w-full mt-2" v-else>
                 <ul class="list-group text-center">
                   <li class="p-3 list-group-item">
                     <div>
@@ -125,8 +125,9 @@ export default {
   mounted() {},
   computed: {
     posts() {
-      let data = (temp = this.$store.getters.post);
-      if (data.length) temp = this.dummy;
+      let temp = this.$store.getters.post;
+      let length = this.$store.getters.post.length;
+      if (!length) temp = this.dummy;
       if (this.sort != null) {
         return temp.filter((el, index) => {
           return el.topic == this.sort;
