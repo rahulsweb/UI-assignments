@@ -127,7 +127,14 @@ export default {
     posts() {
       let temp = this.$store.getters.post;
       let length = this.$store.getters.post.length;
-      if (!length) temp = this.dummy;
+      if (!length) {
+        temp = this.dummy;
+        temp.map((el, index) => {
+          let action = "AddPost";
+
+          this.$store.dispatch(action, el);
+        });
+      }
       if (this.sort != null) {
         return temp.filter((el, index) => {
           return el.topic == this.sort;
