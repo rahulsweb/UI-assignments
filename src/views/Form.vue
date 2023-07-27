@@ -22,7 +22,7 @@
       </div>
       <div class="mt-3 bg-white p-3 font-size-4 md:flex">
         <div class="col-sm-12 col-md-9 col-lg-9 p-2">
-          <form class="w-full max-w-lg">
+          <form class="">
             <div class="mb-4">
               <label class="block text-gray-700 mb-2 font-size-4" for="Title">
                 Title <span class="text-red-700 ml-2">REQUIRED</span>

@@ -14,7 +14,7 @@
             <div class="">
               <small class="text-gray-500 font-size-6"> SORT BY </small>
               <b-form-select
-                class="w-30 font-size-4 pt-1 pb-1 ml-2 mb-2 mt-2 border-left"
+                class="wp-20 font-size-6 pt-1 pb-1 ml-2 mt-2 border-left"
                 v-model="selected"
                 :options="options"
               >
@@ -26,7 +26,7 @@
               </b-form-select>
 
               <b-form-select
-                class="w-30 font-size-4 pt-1 pb-1 mr-2 mb-2 mt-2 border-right"
+                class="wp-20 font-size-6 pt-1 pb-1 mr-2 mt-2 border-right"
                 v-model="selected1"
                 :options="options1"
                 @change="load"
@@ -41,9 +41,9 @@
               <button
                 @click="addPost"
                 type="button"
-                class="lg:float-right md:float-right inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+                class="lg:float-right md:float-right inline-block rounded bg-primary px-6 pb-2 pt-2.5 font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
               >
-                + Start a Discussion
+                <label> <span class="">+</span> Start a Discussion</label>
               </button>
             </div>
           </div>
@@ -57,9 +57,9 @@
         </div>
         <div class="col-sm-12 col-md-3 col-lg-3 p-2 relative mp-10">
           <Dropdown> </Dropdown>
-          <div class="mt-2 p-2">
+          <div class="mt-2 p-2 col-12 center">
             <label class="font-size-10 pt-3 pb-2"> Popular Contributor </label>
-            <div class="col-12 flex mt-3">
+            <div class="flex mt-3">
               <div class="col-4">
                 <img
                   class="object-cover w-8 h-8 rounded-full"
@@ -179,11 +179,21 @@ export default {
 </script>
 
 <style>
-.mp-10 {
-  margin-top: 10%;
+.wp-20 {
+  width: 12%;
 }
+@media only screen and (min-width: 768px) {
+  .wp-20 {
+    width: 7%;
+    font-size: 0.6rem;
+  }
+}
+.mp-10 {
+  margin-top: 4.5%;
+}
+
 .post .btn {
-  font-size: 0.3rem !important;
+  font-size: 0.4rem;
 }
 .border-left {
   border: 1px solid gray;
@@ -194,5 +204,11 @@ export default {
   border: 1px solid gray;
   border-top-right-radius: 20%;
   border-bottom-right-radius: 20%;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
 }
 </style>
