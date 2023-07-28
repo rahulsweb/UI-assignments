@@ -43,7 +43,8 @@
                 type="button"
                 class="lg:float-right md:float-right inline-block rounded bg-primary px-6 pb-2 pt-2.5 font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
               >
-                <label> <span class="">+</span> Start a Discussion</label>
+                <span style="font-size: 1rem" class="p-1">+</span>
+                <label style="font-size: 0.7rem">Start a Discussion</label>
               </button>
             </div>
           </div>
@@ -58,68 +59,68 @@
         <div class="col-sm-12 col-md-3 col-lg-3 p-2 relative mp-10">
           <Dropdown> </Dropdown>
           <div class="mt-2 p-2 col-12 center">
-            <label class="font-size-10 pt-3 pb-2"> Popular Contributor </label>
+            <label class="text-md pt-3 pb-2"> Popular Contributor </label>
             <div class="flex mt-3">
               <div class="col-4">
                 <img
-                  class="object-cover w-8 h-8 rounded-full"
+                  class="object-cover w-12 h-12 rounded-full"
                   src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                   alt=""
                 />
                 <div>
-                  <span class="font-size-4"> {{ "Virat ss" }}</span>
+                  <span class="text-sm"> {{ "Virat ss" }}</span>
                 </div>
               </div>
               <div class="col-4">
                 <img
-                  class="object-cover w-8 h-8 rounded-full"
+                  class="object-cover w-12 h-12 rounded-full"
                   src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                   alt=""
                 />
                 <div>
-                  <span class="font-size-4"> {{ "John mar" }}</span>
+                  <span class="text-sm"> {{ "John mar" }}</span>
                 </div>
               </div>
               <div class="col-4">
                 <img
-                  class="object-cover w-8 h-8 rounded-full"
+                  class="object-cover w-12 h-12 rounded-full"
                   src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
                   alt=""
                 />
                 <div>
-                  <span class="font-size-4"> {{ "Test name" }}</span>
+                  <span class="text-sm"> {{ "Test name" }}</span>
                 </div>
               </div>
             </div>
             <div class="col-12 flex mt-3">
               <div class="col-4">
                 <img
-                  class="object-cover w-8 h-8 rounded-full"
+                  class="object-cover w-12 h-12 rounded-full"
                   src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                   alt=""
                 />
                 <div>
-                  <span class="font-size-4"> {{ "User name" }}</span>
+                  <span class="text-sm"> {{ "User name" }}</span>
                 </div>
               </div>
               <div class="col-4">
                 <img
-                  class="object-cover w-8 h-8 rounded-full"
+                  class="object-cover w-12 h-12 rounded-full"
                   src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                   alt=""
                 />
                 <div>
-                  <span class="font-size-4"> {{ "First name" }}</span>
+                  <span class="text-sm"> {{ "First name" }}</span>
                 </div>
               </div>
               <div class="col-4">
                 <img
-                  class="object-cover w-8 h-8 rounded-full"
+                  class="object-cover w-12 h-12 rounded-full"
                   src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                   alt=""
                 />
                 <div>
-                  <span class="font-size-4"> {{ "name " }}</span>
+                  <span class="text-sm"> {{ "name " }}</span>
                 </div>
               </div>
             </div>
@@ -189,7 +190,7 @@ export default {
   }
 }
 .mp-10 {
-  margin-top: 4.5%;
+  margin-top: 4%;
 }
 
 .post .btn {

@@ -80,6 +80,29 @@
                     </tr>
                   </tbody>
                 </table>
+                <div class="clearfix btn-group col-md-2 offset-md-5">
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary"
+                    v-if="page != 1"
+                    @click="page--"
+                  ></button>
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary"
+                    v-for="(pageNumber, index) in pages.slice(page - 1, page + 5)"
+                    :key="index"
+                    @click="page = pageNumber"
+                  >
+                    {{ pageNumber }}
+                  </button>
+                  <button
+                    type="button"
+                    @click="page++"
+                    v-if="page < pages.length"
+                    class="btn btn-sm btn-outline-secondary"
+                  ></button>
+                </div>
               </div>
               <div class="w-full mt-2" v-else>
                 <ul class="list-group text-center">
@@ -102,6 +125,10 @@ export default {
   props: ["sort"],
   data() {
     return {
+   
+      page: 1,
+      perPage: 9,
+      pages: [],
       dummy: [
         {
           title: "Software Rngineer",
