@@ -4,7 +4,7 @@
       <h4 class="text-2xl text-bold dark:text-white">New Post</h4>
 
       <div
-        class="block w-full p-4 mt-2 text-gray-900 border border-gray-300 rounded-lg bg-stone-300 sm:text-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+        class="block w-full p-3 mt-2 text-gray-800 border border-gray-300 rounded-lg bg-gray-300 sm:text-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
       >
         <strong class="text-gray-500 font-size-10 text-red-700 mt-2">
           Your content will need to be approved by a moderator</strong

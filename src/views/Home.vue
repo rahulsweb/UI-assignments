@@ -6,7 +6,7 @@
           <div class="mt-4">
             <label class="font-size-10"> Forumx Resourse </label>
             <br />
-            <small class="text-gray-500 font-size-6">
+            <small class="text-gray-500 text-sm">
               Learn how to make the most of your Forumx Forum experience
             </small>
           </div>
