@@ -58,10 +58,10 @@
         </div>
         <div class="col-sm-12 col-md-3 col-lg-3 p-2 relative mp-10">
           <Dropdown> </Dropdown>
-          <div class="mt-2 p-2 col-12 center">
-            <label class="text-md pt-3 pb-2"> Popular Contributor </label>
-            <div class="flex mt-3">
-              <div class="col-4">
+          <div class="p-2 col-12 center">
+            <label class="text-md pt-3 p-2"> Popular Contributor </label>
+            <div class="flex">
+              <div class="col-4 m-1">
                 <img
                   class="object-cover w-12 h-12 rounded-full"
                   src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
@@ -71,7 +71,7 @@
                   <span class="text-sm"> {{ "Virat ss" }}</span>
                 </div>
               </div>
-              <div class="col-4">
+              <div class="col-4 m-1">
                 <img
                   class="object-cover w-12 h-12 rounded-full"
                   src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
@@ -81,7 +81,7 @@
                   <span class="text-sm"> {{ "John mar" }}</span>
                 </div>
               </div>
-              <div class="col-4">
+              <div class="col-4 m-1">
                 <img
                   class="object-cover w-12 h-12 rounded-full"
                   src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
@@ -93,7 +93,7 @@
               </div>
             </div>
             <div class="col-12 flex mt-3">
-              <div class="col-4">
+              <div class="col-4 m-1">
                 <img
                   class="object-cover w-12 h-12 rounded-full"
                   src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
@@ -103,7 +103,7 @@
                   <span class="text-sm"> {{ "User name" }}</span>
                 </div>
               </div>
-              <div class="col-4">
+              <div class="col-4 m-1">
                 <img
                   class="object-cover w-12 h-12 rounded-full"
                   src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
@@ -113,7 +113,7 @@
                   <span class="text-sm"> {{ "First name" }}</span>
                 </div>
               </div>
-              <div class="col-4">
+              <div class="col-4 m-1">
                 <img
                   class="object-cover w-12 h-12 rounded-full"
                   src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
@@ -210,6 +210,6 @@ export default {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
+  width: 100%;
 }
 </style>
