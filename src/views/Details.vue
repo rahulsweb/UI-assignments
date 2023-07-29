@@ -63,7 +63,9 @@
               </div>
               <hr class="mt-1" />
               <ul class="my-4 space-y-3 list-group">
-                <li class="ml-3 p-2 pt-2 list-group-item">
+                <li
+                  class="ml-3 p-2 pt-2 list-group-item hover:outline-none hover:border-blue-500 hover:ring-blue-500 hover:ring-1"
+                >
                   <div>
                     <p class="font-size-4">
                       starting your own business is an exciting and momentous endeavor
@@ -115,7 +117,9 @@
                     </div>
                   </div>
                 </li>
-                <li class="ml-3 p-2 pt-2 list-group-item">
+                <li
+                  class="ml-3 p-2 pt-2 list-group-item hover:outline-none hover:border-blue-500 hover:ring-blue-500 hover:ring-1"
+                >
                   <div>
                     <p class="font-size-4">
                       starting your own business is an exciting and momentous endeavor
@@ -167,7 +171,9 @@
                     </div>
                   </div>
                 </li>
-                <li class="ml-3 p-2 pt-2 list-group-item">
+                <li
+                  class="ml-3 p-2 pt-2 list-group-item hover:outline-none hover:border-blue-500 hover:ring-blue-500 hover:ring-1"
+                >
                   <div>
                     <p class="font-size-4">
                       starting your own business is an exciting and momentous endeavor
@@ -219,7 +225,9 @@
                     </div>
                   </div>
                 </li>
-                <li class="ml-3 p-2 pt-2 list-group-item">
+                <li
+                  class="ml-3 p-2 pt-2 list-group-item hover:outline-none hover:border-blue-500 hover:ring-blue-500 hover:ring-1"
+                >
                   <div>
                     <p class="font-size-4">
                       starting your own business is an exciting and momentous endeavor
