@@ -14,10 +14,11 @@
                     class="w-100 bg-white divide-y divide-gray-200 dark:divide-gray-700 dark:bg-gray-900"
                   >
                     <tr
-                      class="w-100"
+                      class="w-100 border hover:outline-none hover:border-blue-500 hover:ring-blue-500 hover:ring-1 rounded w-full py-2 px-3 mb-1 leading-tight"
                       v-for="(post, index) in posts"
                       :key="index"
                       @click="redirectToDetails(post)"
+                      :class="post.topic ? 'bg-green-100' : ''"
                     >
                       <td
                         class="px-4 py-4 text-gray-500 dark:text-gray-300 whitespace-nowrap"
@@ -125,7 +126,6 @@ export default {
   props: ["sort"],
   data() {
     return {
-   
       page: 1,
       perPage: 9,
       pages: [],

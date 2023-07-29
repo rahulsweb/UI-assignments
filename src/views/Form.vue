@@ -23,39 +23,39 @@
       <div class="mt-3 bg-white p-3 font-size-4 md:flex">
         <div class="col-sm-12 col-md-9 col-lg-9 p-2">
           <form class="">
-            <div class="mb-4">
+            <div class="mb-3">
               <label class="block text-gray-700 mb-2 font-size-4" for="Title">
                 Title <span class="text-red-700 ml-2">REQUIRED</span>
               </label>
 
               <input
-                :class="errors.first('title') ? 'border-red-400' : ''"
-                class="border rounded w-full py-2 px-3 mb-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="Title"
+                v-validate="'required'"
+                class="border focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 rounded w-full py-2 px-3 mb-1 leading-tight"
+                id="title"
+                type="title"
                 name="title"
-                type="text"
                 placeholder="Write a descriptive title for your post"
                 v-model="title"
-                v-validate="'required'"
+                :class="errors.first('title') ? red : ''"
               />
               <p v-if="errors.first('title')" class="text-red-500 text-xs italic">
                 Please fill out this Title field.
               </p>
             </div>
-            <div class="">
+            <div class="mb-3">
               <label class="block mb-2 font-size-4" for="Tags">
                 Tags
                 <span class="text-red-700 ml-2">REQUIRED</span>
               </label>
               <input
                 v-validate="'required'"
-                :class="tags ? 'border-red-400' : 'border-green-400'"
-                class="border border-red-500 rounded w-full py-2 px-3 mb-1 leading-tight focus:outline-none focus:shadow-outline"
+                class="border focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 rounded w-full py-2 px-3 mb-1 leading-tight"
                 id="Tags"
                 type="Tags"
                 name="tags"
                 placeholder="+ Add tags to make your post discoverable"
                 v-model="tags"
+                :class="errors.first('tags') ? red : ''"
               />
               <p v-if="errors.first('tags')" class="text-red-500 text-xs italic">
                 Please fill out this Tags field.
@@ -68,13 +68,13 @@
               <ckeditor
                 v-validate="'required'"
                 name="editor"
-                :class="!editorData ? 'border-red-400' : 'border-green-400'"
                 :editor="editor"
                 v-model="editorData"
                 :config="editorConfig"
                 placeholder="Enter the content"
                 :height="120"
                 :rows="6"
+                :class="errors.first('editor') ? red : ''"
               ></ckeditor>
               <p v-if="errors.first('editor')" class="text-red-500 text-xs italic mt-2">
                 Please fill out this Editor field.
@@ -139,6 +139,10 @@ export default {
     return {
       tag: "",
       post: [],
+      red:
+        "bg-red-50 border border-red-500 text-red-900 placeholder-red-700  rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-red-100 dark:border-red-400",
+      green:
+        "bg-green-50 border border-green-500 text-green-900 placeholder-green-700 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-green-100 dark:border-green-400",
       dismissSecs: 2,
       dismissCountDown: 0,
       showDismissibleAlert: true,
