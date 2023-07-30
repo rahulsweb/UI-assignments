@@ -201,7 +201,6 @@ export default {
     margin-top: 10px;
   }
   #list-post {
-    display: revert;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -209,6 +208,9 @@ export default {
   }
   #list-post div {
     margin-top: 10px;
+  }
+  #list-post img {
+    display: revert;
   }
   i {
     padding: 0.5rem;
