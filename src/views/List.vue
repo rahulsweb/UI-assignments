@@ -4,10 +4,10 @@
       <!-- component -->
 
       <section class="sm:mt-5">
-        <div class="flex flex-col">
+        <div class="md:flex flex-col">
           <div class="overflow-x-auto">
             <div class="inline-block w-full m-1">
-              <div class="" v-if="posts.length">
+              <div id="list-post" class="list-post" v-if="posts.length">
                 <ul class="list-group">
                   <li
                     v-for="(post, index) in posts.slice(
@@ -26,8 +26,8 @@
                     class="list-group-item p-3 mt-1 mb-1 border hover:outline-none hover:border-blue-500 hover:ring-1 rounded w-full leading-tight"
                   >
                     <div class="" @click="redirectToDetails(post)">
-                      <div class="col-12 flex">
-                        <div class="col-4">
+                      <div class="col-12 md:flex">
+                        <div class="col-12 col-md-4">
                           <div class="min-w-0 flex-auto">
                             <p class="font-semibold font-size-6 text-gray-900">
                               {{ post.title }}
@@ -39,14 +39,14 @@
                             ></p>
                           </div>
                         </div>
-                        <div class="col-2">
+                        <div class="col-12 col-md-2">
                           <p class="font-size-6">0 replies</p>
                           <p class="font-size-6 text-gray-600 dark:text-gray-400">
                             10.3k views
                           </p>
                         </div>
-                        <div class="col-3">
-                          <div class="flex items-center gap-x-2">
+                        <div class="col-12 col-md-3">
+                          <div class="md:flex md:items-center gap-x-2">
                             <img
                               class="object-cover w-8 h-8 rounded-full"
                               src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
@@ -62,9 +62,9 @@
                             </div>
                           </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-12 col-md-3">
                           <div
-                            class="flex gap-x-6"
+                            class="md:flex gap-x-6"
                             style="
                               margin: auto;
                               text-align: center;
@@ -192,5 +192,11 @@ export default {
 <style>
 .page-item span {
   background: white !important;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 </style>

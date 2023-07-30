@@ -200,6 +200,19 @@ export default {
     display: block;
     margin-top: 10px;
   }
+  #list-post {
+    display: revert;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+  }
+  #list-post div {
+    margin-top: 10px;
+  }
+  i {
+    padding: 0.5rem;
+  }
 }
 
 .mp-10 {
@@ -215,11 +228,5 @@ export default {
   border: 1px solid gray;
   border-top-right-radius: 20%;
   border-bottom-right-radius: 20%;
-}
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
 }
 </style>
