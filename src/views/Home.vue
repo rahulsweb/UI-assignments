@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="post container mx-auto">
+    <div class="container mx-auto">
       <div class="w-full lg:flex md:flex">
-        <div class="col-sm-12 col-md-9 col-lg-9 m-2">
+        <div class="col-sm-12 col-md-9 col-lg-9 m-1">
           <div class="mt-4">
             <label class="font-size-10"> Forumx Resourse </label>
             <br />
@@ -10,7 +10,7 @@
               Learn how to make the most of your Forumx Forum experience
             </small>
           </div>
-          <div class="w-full">
+          <div class="w-full post" style="width: 98%">
             <div class="">
               <small class="text-gray-500 font-size-6"> SORT BY </small>
               <b-form-select
@@ -41,10 +41,11 @@
               <button
                 @click="addPost"
                 type="button"
-                class="lg:float-right md:float-right inline-block rounded bg-blue-500 px-6 pb-2 pt-2.5 font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+                id="discuss"
+                class="sm:float-right xs:float-right lg:float-right p-2 pl-2 pr-2 md:float-right inline-block rounded bg-blue-500 font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
               >
-                <span style="font-size: 1rem" class="p-1">+</span>
-                <label style="font-size: 0.7rem">Start a Discussion</label>
+                <span style="font-size: 1rem" class="">+</span>
+                <label style="font-size: 0.7rem" class="ml-1">Start a Discussion</label>
               </button>
             </div>
           </div>
@@ -155,6 +156,7 @@ export default {
   mounted() {
     this.posts = this.$store.getters || [];
   },
+
   components: {
     List,
     Dropdown,
@@ -178,24 +180,32 @@ export default {
   },
 };
 </script>
-
+<style scoped></style>
 <style>
-.wp-20 {
-  width: 12%;
-}
 @media only screen and (min-width: 768px) {
   .wp-20 {
-    width: 7%;
+    width: 10%;
     font-size: 0.6rem;
   }
 }
+@media only screen and (max-width: 767px) {
+  #reply {
+    margin-top: 5px;
+  }
+  .wp-20 {
+    width: 30%;
+    border-radius: 0% !important;
+  }
+  #discuss {
+    display: block;
+    margin-top: 10px;
+  }
+}
+
 .mp-10 {
   margin-top: 4%;
 }
 
-.post .btn {
-  font-size: 0.4rem;
-}
 .border-left {
   border: 1px solid gray;
   border-top-left-radius: 20%;
