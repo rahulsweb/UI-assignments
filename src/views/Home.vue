@@ -216,7 +216,7 @@ export default {
 }
 
 .mp-10 {
-  margin-top: 4%;
+  margin-top: 3.6%;
 }
 
 .border-left {
